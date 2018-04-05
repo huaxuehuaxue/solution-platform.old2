@@ -1,0 +1,28 @@
+subprojects{
+
+	apply plugin: 'java'
+	apply plugin: 'idea'
+
+	group = 'com.h3c.solution.platform'
+	version = '0.0.1-SNAPSHOT'
+	sourceCompatibility = 1.8
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+	}
+	sourceSets{
+		main{
+			resources{
+				srcDirs=['src/main/resources', 'src/main/java']
+			}
+		}
+	}
+
+	tasks.withType(JavaCompile) {
+		options.encoding = 'UTF-8'
+	}
+
+}

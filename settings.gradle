@@ -1,0 +1,5 @@
+rootProject.name = 'solution-platform'
+
+include 'sp-nodejs-server'
+include 'sp-ca-server'
+include 'sp-workflow-server'
